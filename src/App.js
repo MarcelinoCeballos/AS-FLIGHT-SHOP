@@ -1,13 +1,22 @@
-import NavBar from "./componentes/NavBar"
+import * as React from 'react';
+import NavBar from "./components/NavBar"
 import './App.css';
+import ItemListContainer from './components/ItemListContainer';
 
 function App() {
   return (
     <div>
-      <NavBar />
-      <h2 className="bienvenidaTienda">"Todo para volar"</h2>
+      <NavBar/>
+      <ItemListContainer
+        greeting="Todo para Volar"/>     
     </div>
   );
 }
 
 export default App;
+
+
+
+
+
+

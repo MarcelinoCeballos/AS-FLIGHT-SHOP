@@ -1,5 +1,6 @@
-import Logo from "../imagenes/LogoTienda.png";
-import "../App.css"
+import Logo from "../assets/img/LogoTienda.png";
+import "../App.css";
+import CartWidget from './CartWidget';
 
 function NavBar () {
     return (
@@ -13,6 +14,7 @@ function NavBar () {
                 <li><a href="">Equipamiento</a></li>
                 <li><a href="">Documentación</a></li>
             </ul>
+            <CartWidget/>
         </div>
     )
 }
