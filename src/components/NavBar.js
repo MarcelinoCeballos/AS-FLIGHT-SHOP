@@ -1,6 +1,7 @@
 import Logo from "../assets/img/LogoTienda.png";
 import "../App.css";
 import CartWidget from './CartWidget';
+import Button from '@mui/material/Button';
 
 function NavBar () {
     return (
@@ -14,6 +15,7 @@ function NavBar () {
                 <li><a href="">Equipamiento</a></li>
                 <li><a href="">Documentación</a></li>
             </ul>
+            <Button variant="contained">Login</Button>
             <CartWidget/>
         </div>
     )
