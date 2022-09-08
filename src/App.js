@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
 import * as React from 'react';
 import NavBar from "./components/NavBar";
 import './App.css';
@@ -6,11 +7,15 @@ import ItemListContainer from './components/ItemListContainer';
 
 function App() {
   return (
-    <div>
-      <NavBar/>
-      <ItemListContainer />
-      <ItemCount />
-    </div>
+    <BrowserRouter>
+    <NavBar/>
+    <Routes>
+      <Route path='/' element={<ItemListContainer/>}/> Muestra todos los productos
+      <Route path='/category/:idcategory' element={<ItemListContainer/>}></Route>      
+    </Routes>
+    <ItemCount />
+    </BrowserRouter> 
+     
   );
 }
 

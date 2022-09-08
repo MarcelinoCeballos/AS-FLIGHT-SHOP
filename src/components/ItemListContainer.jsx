@@ -1,8 +1,9 @@
 import ItemList from "./ItemList";
 
-function ItemListContainer (props) {
+function ItemListContainer () {
     return (
         <ItemList />
+        
     )}
 
 export default ItemListContainer;

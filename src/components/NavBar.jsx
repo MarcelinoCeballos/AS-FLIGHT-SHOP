@@ -17,6 +17,7 @@ function NavBar () {
             </ul>
             <Button variant="contained">Login</Button>
             <CartWidget/>
+            
         </div>
     )
 }

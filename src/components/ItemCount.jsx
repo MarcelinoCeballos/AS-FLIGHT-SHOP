@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import Fab from '@mui/material/Fab';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
@@ -14,8 +14,15 @@ function ItemCount () {
     };
 
     const SubtractItemHandler = () => {
-        itemNumber === 0 || setItemNumber(itemNumber - 1);
+        itemNumber === 1 || setItemNumber(itemNumber - 1);
     };
+
+   let agregarAlCarrito = 0;
+
+   function handleClick () {
+        agregarAlCarrito +=1;
+        alert("Usted agregó " + agregarAlCarrito + " unidades al carrito");
+   }
 
     return (
         <div className="counterButton">
@@ -24,7 +31,7 @@ function ItemCount () {
                 <p>{itemNumber}</p>
             </div>
             <Fab color="primary" aria-label="add" onClick={AddItemHandler}><AddIcon /></Fab>
-            <Button variant="outlined">Agregar al Carrito</Button>
+            <Button onClick={handleClick} variant="outlined">Agregar al Carrito</Button>
         </div>
     )
 }
