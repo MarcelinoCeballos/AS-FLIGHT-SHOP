@@ -13,7 +13,6 @@ function App() {
       <Route path='/' element={<ItemListContainer/>}/> Muestra todos los productos
       <Route path='/category/:idcategory' element={<ItemListContainer/>}></Route>      
     </Routes>
-    <ItemCount />
     </BrowserRouter> 
      
   );

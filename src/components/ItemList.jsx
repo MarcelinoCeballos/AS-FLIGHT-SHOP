@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import Item from "./Item"
 import customFetch from "../utils/customFetch";
 
-const data = [
+const productos = [
     {
         id: 1,
         title: "HeadSet",
@@ -27,8 +27,8 @@ function ItemList () {
     const [datos, setDatos] =useState([]);
     //ComponentDidMount
     useEffect(() => {
-        customFetch(2000, data)
-            .then(datos => setDatos(data))
+        customFetch(2000, productos)
+            .then(datos => setDatos(productos))
             .catch(err => console.log(err))
     }, []);
 
