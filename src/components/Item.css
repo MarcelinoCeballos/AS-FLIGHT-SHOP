@@ -1,0 +1,23 @@
+.ItemListBox {
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+  
+}
+
+.productoBox {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding-top: 15px; 
+    background-color:#b5e3f5; 
+    width: 250px;
+    height: 500px; 
+    border-radius: 3mm;
+    margin-left: 50px;
+}
+.productoImagen {
+    width: 200px;
+    height: 200px;
+}
