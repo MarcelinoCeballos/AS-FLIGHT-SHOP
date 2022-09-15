@@ -1,12 +1,15 @@
-function Item({ title, brand, model, description, image, price }) {
+import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
+
+function Item({ id, title, price, image }) {
   return (
     <div className="productoBox">
-      <img className="productoImagen" src={image} alt={title} />
       <h1>{title}</h1>
-      <h2>{brand}</h2>
-      <h3>{model}</h3>
-      <p>{description}</p>
-      <p>{price}</p>
+      <h3>{price}</h3>
+      <img className="productoImagen" src={image} alt={title} />
+      <Button variant="contained">
+        <Link to={`/item/${id}`}>detalle</Link>
+      </Button>
     </div>
   );
 }
