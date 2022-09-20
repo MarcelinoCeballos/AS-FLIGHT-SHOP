@@ -3,6 +3,7 @@ import customFetch from "../utils/customFetch";
 import ItemDetail from "./ItemDetail";
 import productos from "../utils/productos";
 import { useParams } from "react-router-dom";
+import "../css/ItemDetail.css";
 
 function ItemDetailContainer(props) {
   const [datos, setDatos] = useState({});

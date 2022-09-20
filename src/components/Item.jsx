@@ -7,9 +7,9 @@ function Item({ id, title, price, image }) {
       <h1>{title}</h1>
       <h3>{price}</h3>
       <img className="productoImagen" src={image} alt={title} />
-      <Button variant="contained">
-        <Link to={`/item/${id}`}>detalle</Link>
-      </Button>
+      <Link to={`/item/${id}`}>
+        <Button variant="contained">detalle</Button>
+      </Link>
     </div>
   );
 }

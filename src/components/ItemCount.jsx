@@ -1,10 +1,11 @@
-import React, { useState } from "react";
 import Fab from "@mui/material/Fab";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import Button from "@mui/material/Button";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
-function ItemCount({ stock, initial }) {
+function ItemCount({ stock, onAdd }) {
   const [itemNumber, setItemNumber] = useState(1);
 
   const AddItemHandler = () => {
@@ -14,10 +15,6 @@ function ItemCount({ stock, initial }) {
   const SubtractItemHandler = () => {
     itemNumber === 1 || setItemNumber(itemNumber - 1);
   };
-
-  function onAddHandler() {
-    alert("Usted agregó " + itemNumber + " unidades al carrito");
-  }
 
   return (
     <div className="counterButton">
@@ -30,8 +27,9 @@ function ItemCount({ stock, initial }) {
       <Fab color="primary" aria-label="add" onClick={AddItemHandler}>
         <AddIcon />
       </Fab>
-      <Button onClick={onAddHandler} variant="outlined">
-        Agregar al Carrito
+      <Button variant="contained" onClick={() => onAdd(itemNumber)}>
+        {" "}
+        Agregar al Carrito{" "}
       </Button>
     </div>
   );

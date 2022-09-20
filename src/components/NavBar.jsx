@@ -1,5 +1,5 @@
 import Logo from "../assets/img/LogoTienda.png";
-import "../App.css";
+import "../css/App.css";
 import CartWidget from "./CartWidget";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
