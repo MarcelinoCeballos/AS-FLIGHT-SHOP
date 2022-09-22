@@ -3,7 +3,6 @@ import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
 import Button from "@mui/material/Button";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 function ItemCount({ stock, onAdd }) {
   const [itemNumber, setItemNumber] = useState(1);
