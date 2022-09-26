@@ -5,11 +5,11 @@ import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import { CartContext } from "./CartContext";
 
-function ItemDetail({ item, context }) {
+function ItemDetail({ item }) {
   const [itemCount, setItemCount] = useState(0);
+  const context = useContext(CartContext);
 
   const onAdd = (qty) => {
-    alert("Usted ha sumado " + qty + " productos al carrito");
     setItemCount(qty);
     context.addItem(item, qty);
   };

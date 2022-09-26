@@ -27,8 +27,7 @@ function ItemCount({ stock, onAdd }) {
         <AddIcon />
       </Fab>
       <Button variant="contained" onClick={() => onAdd(itemNumber)}>
-        {" "}
-        Agregar al Carrito{" "}
+        Agregar al Carrito
       </Button>
     </div>
   );
