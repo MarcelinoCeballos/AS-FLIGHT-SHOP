@@ -14,7 +14,7 @@ function ItemDetail({ item }) {
     context.addItem(item, qty);
   };
 
-  return (
+  return item.id ? (
     <div className="productDetailBox">
       <div>
         <img className="productDetailImage" src={item.image} alt={item.title} />
@@ -32,6 +32,8 @@ function ItemDetail({ item }) {
         )}
       </div>
     </div>
+  ) : (
+    <p>Cargando...</p>
   );
 }
 

@@ -1,7 +1,9 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { CartContext } from "./CartContext";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+import CartBreakDown from "./CartBreakDown";
+import CartItem from "./CartItem";
 
 function Cart() {
   const context = useContext(CartContext);
@@ -20,22 +22,20 @@ function Cart() {
       <Link to="/">
         <Button variant="outlined">SEGUIR COMPRANDO</Button>
       </Link>
-      {context.cartList.map((item) => (
-        <li key={Math.random()}>
-          <h1>Producto: {item.title}</h1>
-          <p>Precio: ${item.price}</p>
-          <img src={item.image} alt={item.title}></img>
-          <p>Cantidad: {item.qty}</p>
-          <Button
-            variant="outlined"
-            onClick={() => {
-              context.removeItem(item.id);
-            }}
-          >
-            QUITAR
-          </Button>
-        </li>
-      ))}
+      {context.cartList.length ? (
+        <div>
+          <CartBreakDown />
+          <ul>
+            {context.cartList.map((item) => (
+              <li key={Math.random()}>
+                <CartItem item={item} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      ) : (
+        <p>Carrito vacío</p>
+      )}
     </div>
   );
 }

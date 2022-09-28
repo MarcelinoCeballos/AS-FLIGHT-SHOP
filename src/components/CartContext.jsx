@@ -30,10 +30,32 @@ const CartContextProvider = ({ children }) => {
       return false;
     }
   };
+  const calculateSubTotal = () => {
+    let subTotalArray = cartList.map((item) => item.price * item.qty);
+    return subTotalArray.reduce(
+      (prevValue, currentValue) => prevValue + currentValue,
+      0
+    );
+  };
+  const calculateAllItemCart = () => {
+    let allItemArray = cartList.map((item) => item.qty);
+    return allItemArray.reduce(
+      (prevValue, currentValue) => prevValue + currentValue,
+      0
+    );
+  };
 
   return (
     <CartContext.Provider
-      value={{ cartList, addItem, removeAllItems, removeItem, isOnCart }}
+      value={{
+        cartList,
+        addItem,
+        removeAllItems,
+        removeItem,
+        isOnCart,
+        calculateSubTotal,
+        calculateAllItemCart,
+      }}
     >
       {children}
     </CartContext.Provider>
