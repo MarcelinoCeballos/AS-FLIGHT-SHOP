@@ -42,7 +42,7 @@ const productos = [
   {
     id: "5",
     title: "Multitool / Leatherman",
-    stock: 1,
+    stock: 2,
     price: 150,
     description:
       "La multiherramienta Leatherman es el instrumento indicado para cuando no pueda realizar una tarea con sus propias manos",
@@ -72,7 +72,7 @@ const productos = [
     id: "8",
     title: "Cessna 172",
     stock: 1,
-    price: 450,
+    price: 75,
     description: "POH manual",
     image: "/assets/img/C172.png",
     categoryId: 3,
