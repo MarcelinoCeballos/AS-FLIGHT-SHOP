@@ -2,7 +2,7 @@ const productos = [
   {
     id: "1",
     title: "Captain Bars",
-    stock: 2,
+    stock: 10,
     price: 75,
     description:
       "Charreteras lavables, doradas, sin broches para colocar en el porta charreteras de su camisa",
@@ -12,7 +12,7 @@ const productos = [
   {
     id: "2",
     title: "Campera de Vuelo",
-    stock: 1,
+    stock: 10,
     price: 450,
     description:
       "Impermeable, durable, interior naranja SOS, color verde militar",
@@ -22,7 +22,7 @@ const productos = [
   {
     id: "3",
     title: "Anteojos de sol",
-    stock: 2,
+    stock: 10,
     price: 75,
     description:
       "Anti reflejo, livianas, porque volar seguros no es una opción sino una necesidad",
@@ -32,7 +32,7 @@ const productos = [
   {
     id: "4",
     title: "Auriculares / HeadSet - David&Clark - H10",
-    stock: 1,
+    stock: 10,
     price: 950,
     description:
       "El auricular David Clark H10-13X tiene un rendimiento silencioso donde escuchará y sentirá la diferencia de inmediato.",
@@ -42,7 +42,7 @@ const productos = [
   {
     id: "5",
     title: "Multitool / Leatherman",
-    stock: 2,
+    stock: 10,
     price: 150,
     description:
       "La multiherramienta Leatherman es el instrumento indicado para cuando no pueda realizar una tarea con sus propias manos",
@@ -52,7 +52,7 @@ const productos = [
   {
     id: "6",
     title: "GPS - GARMIN",
-    stock: 1,
+    stock: 10,
     price: 250,
     description:
       "La mejor herramienta para saber donde estoy, a dónde quiero ir y qué debo hacer para llegar",
@@ -62,7 +62,7 @@ const productos = [
   {
     id: "7",
     title: "Cessna 210",
-    stock: 2,
+    stock: 10,
     price: 75,
     description: "POH manual",
     image: "/assets/img/C210.png",
@@ -71,7 +71,7 @@ const productos = [
   {
     id: "8",
     title: "Cessna 172",
-    stock: 1,
+    stock: 10,
     price: 75,
     description: "POH manual",
     image: "/assets/img/C172.png",
@@ -80,7 +80,7 @@ const productos = [
   {
     id: "9",
     title: "Piloto Privado",
-    stock: 2,
+    stock: 10,
     price: 75,
     description:
       "Todo lo que debés saber para aprobar los contenidos del examen de PPA",
@@ -90,7 +90,7 @@ const productos = [
   {
     id: "10",
     title: "Instructor de Vuelo",
-    stock: 2,
+    stock: 10,
     price: 75,
     description:
       "Todo lo que debés saber para ser un instructor competente que eduque con los más altos estándares",

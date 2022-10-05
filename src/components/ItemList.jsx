@@ -9,8 +9,7 @@ function ItemList({ datosProductos }) {
           id={item.id}
           start={0}
           title={item.title}
-          brand={item.brand}
-          model={item.model}
+          stock={item.stock}
           description={item.description}
           price={item.price}
           image={item.image}

@@ -22,7 +22,8 @@ function ItemDetail({ item }) {
       <div className="productDetailText">
         <h1>{item.title} </h1>
         <p>{item.description}</p>
-        <p>{item.price}</p>
+        <p>Precio $ {item.price}</p>
+        <p>Stock {item.stock} </p>
         {itemCount === 0 ? (
           <ItemCount stock={item.stock} initial={0} onAdd={onAdd} />
         ) : (

@@ -7,12 +7,10 @@ function ItemListContainer(props) {
   const [datos, setDatos] = useState([]);
   const { idCategory } = useParams();
 
-  //ComponentDidMount
   useEffect(() => {
     firestoreFetch(idCategory)
       .then((result) => {
         setDatos(result);
-        console.log(result);
       })
       .catch((err) => console.log(err));
   }, [idCategory]);
