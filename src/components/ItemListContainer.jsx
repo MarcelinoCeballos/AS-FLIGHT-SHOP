@@ -11,6 +11,7 @@ function ItemListContainer(props) {
     firestoreFetch(idCategory)
       .then((result) => {
         setDatos(result);
+        console.log(result);
       })
       .catch((err) => console.log(err));
   }, [idCategory]);
